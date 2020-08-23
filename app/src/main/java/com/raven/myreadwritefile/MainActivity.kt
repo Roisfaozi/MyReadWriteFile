@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         val fileModel = FileHelper.readFromFile(this, title)
         edit_title.setText(fileModel.filename)
         edit_file.setText(fileModel.data)
-        Toast.makeText(this, "Loading" + fileModel + "data", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Loading" + fileModel.filename + "data", Toast.LENGTH_SHORT).show()
     }
 
     private fun saveFile() {

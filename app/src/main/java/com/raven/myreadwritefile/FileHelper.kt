@@ -37,7 +37,7 @@ internal object FileHelper {
         } catch (e: FileNotFoundException){
             Log.d(TAG, "file not found : ", e)
         } catch (e: IOException) {
-            Log.d(TAG, "Can notread file: ", e)
+            Log.d(TAG, "Can not read file: ", e)
         }
 
         return fileModel
